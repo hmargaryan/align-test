@@ -1,0 +1,68 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 113px;
+  margin-bottom: 22px;
+}
+
+.name {
+  margin-bottom: 10px;
+
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.player {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 404px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 21px;
+
+  background: transparent linear-gradient(90deg, #09182d 0%, #162032 100%) 0% 0%
+    no-repeat padding-box;
+
+  &:not(:last-of-type) {
+    margin-bottom: 6px;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+
+    display: block;
+
+    width: 404px;
+    height: 6px;
+
+    background: transparent
+      linear-gradient(90deg, #08182b 0%, #1b4853 49%, #061427 100%) 0% 0%
+      no-repeat padding-box;
+  }
+
+  &Number {
+    width: 25px;
+    margin-right: 22px;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #ced2db;
+  }
+
+  &Name {
+    font-size: 18px;
+    color: #aaa092;
+  }
+}
